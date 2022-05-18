@@ -15,7 +15,7 @@ print(gross)  '''
 score = float(input("Enter Score: "))
 if score > 1.0:
     
-	print('error')
+	  print('error')
     
 elif score >=0.9 :
     print ('A')
