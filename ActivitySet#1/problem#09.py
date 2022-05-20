@@ -1,5 +1,5 @@
 # Lists
-
+'''01'''
 filename = "dataset/romeo.txt"
 fname = input("Enter file name: ")
 fh = open(fname,'r')
@@ -8,7 +8,7 @@ for line in fh:
     for word in line.split():
         if word not in lst :
         	lst.append(word)
-print(sorted(lst))
+'''02'''
 # fname = input("Enter file name: ")
 # if len(fname) < 1:
 #     fname = "mbox-short.txt"
@@ -17,8 +17,9 @@ print(sorted(lst))
 # count = 0
 
 # for line in fh :
-#     if line.startswith("From"):
-#     	count+=1
-#         print(line)
-
+#     if line.startswith("From "):
+#         #if line[4]==' ':
+#          #   line=line.split()
+#             print(line.split()[1])
+#             count+=1
 # print("There were", count, "lines in the file with From as the first word")
