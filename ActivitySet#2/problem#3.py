@@ -6,15 +6,16 @@ def get_cs():
 
 
 def cs_to_lot(cs):
-    c=(cs.split("="))
-    c=(c.split(";"))
-    c=list(c)
-    return c
+    list=[]
+    c=(cs.split(";"))
+    for r in c:
+      list.append(tuple(r.split('=')))
+    return list
 
 
 def main():
+    
     cs = get_cs()
-
     lot = cs_to_lot(cs)
     print(lot)
 

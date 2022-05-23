@@ -13,5 +13,7 @@ for line in handle:
         hour=time.split(":")[0]
         result[hour]=result.get(hour,0)+1
            
-            
-print(sorted(result.items()))
+rr=()            
+rr=sorted(result.items())
+for a,b in rr:
+    print(a,b)
