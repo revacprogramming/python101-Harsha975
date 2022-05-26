@@ -10,7 +10,7 @@ if h<=40:
   gross=h*r
 else:
   gross=(40*r)+((h-40)*(r*1.5))
-print(gross)  
+print(gross)  '''
  
 score = float(input("Enter Score: "))
 if score > 1.0:

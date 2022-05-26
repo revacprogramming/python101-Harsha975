@@ -1,11 +1,11 @@
 
 def add(a, b):
-    sum=a+b
-    return sum
+    add=a+b
+    return add
 
 
-def output(a, b, sum):
-    print('{} + {} is {}'.format(a,b,sum))
+def output(a, b, add):
+    print('{} + {} is {}'.format(a,b,add))
 
 
 def main():
