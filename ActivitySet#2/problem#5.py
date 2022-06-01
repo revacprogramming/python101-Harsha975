@@ -22,7 +22,7 @@ def dict_to_cs(d):
 def main():
     cs = get_cs()
 
-    d = cs_to_dict(cs) # convert connect string to a dictionary
+    d = cs_to_dict(cs) 
     print(d)
 
     cs = dict_to_cs(d)
