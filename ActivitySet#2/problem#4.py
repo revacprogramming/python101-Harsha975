@@ -21,7 +21,7 @@ def lot_to_cs(lot):
 def main():
     cs=get_cs()
 
-    lot=cs_to_lot(cs)  # convert connect string to list of tuples
+    lot=cs_to_lot(cs)  
     print(lot)
 
     cs=lot_to_cs(lot)  # convert list of strings to connect string

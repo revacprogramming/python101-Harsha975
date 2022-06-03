@@ -2,7 +2,7 @@
 # https://www.py4e.com/lessons/network
 import socket
 # socket=socket.socket()
-socket=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+'''socket=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 socket.connect(('data.pr4e.org', 80))
 call='GET http://data.pr4e.org/intro-short.txt HTTP/1.0\r\n\r\n'.encode()
 socket.send(call)
@@ -10,4 +10,14 @@ while True:
     data=socket.recv(1000)
     if len(data)<1:
         break
-    print(data.decode())
+    print(data.decode())'''
+from urllib.request import*
+from bs4 import BeautifulSoup
+count=0
+url=input('enter the url :')
+html=urlopen(url).read()
+soup=BeautifulSoup(html,'html.parser')
+tags=soup('span')
+for tag in tags:
+    count+=int(tag.contents[0])
+print(count)
