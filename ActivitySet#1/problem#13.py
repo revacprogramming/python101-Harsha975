@@ -11,13 +11,37 @@ while True:
     if len(data)<1:
         break
     print(data.decode())'''
-from urllib.request import*
+# from urllib.request import*
+# from bs4 import BeautifulSoup
+# count=0
+# url=input('enter the url :')
+# html=urlopen(url).read()
+# soup=BeautifulSoup(html,'html.parser')
+# tags=soup('span')
+# for tag in tags:
+#     count+=int(tag.contents[0])
+# print(count)
 from bs4 import BeautifulSoup
-count=0
-url=input('enter the url :')
-html=urlopen(url).read()
-soup=BeautifulSoup(html,'html.parser')
-tags=soup('span')
-for tag in tags:
-    count+=int(tag.contents[0])
-print(count)
+from urllib.request import urlopen
+url=input('enter the url- ')
+counts=int(input('enter count: '))
+position=int(input('enter position: '))
+# html=urlopen(url).read()
+# soup=BeautifulSoup(html,'html.parser')
+# print(soup)
+# divs=soup.find('li',class_='reference internal')
+# print(divs)
+# count=0
+# tags = soup('a')
+for i in range(counts):
+    count=0
+    html=urlopen(url).read()
+    soup=BeautifulSoup(html,'html.parser')
+    # print(count)
+    tags = soup('a')
+    for tag in tags:
+        if count<position:
+            # print(tag.get('href'))
+            count+=1
+            url=tag.get('href')
+    print('Retrieving:',url)
