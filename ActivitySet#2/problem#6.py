@@ -1,8 +1,7 @@
 
 class Menu:
-    # def __init__(self,food,price):
-    #     self.food=food
-    #     self.price=price
+    # def __init__(self):
+        
     def add(self,food,price):
         self.food=food
         self.price=price
@@ -12,6 +11,10 @@ class Menu:
 
 
 m = Menu()
+# food=input("")
+# price=input("")
+# m.add(food, price)
+# m.show()
 m.add("idly", 10)
 m.show()
 m.add("vada", 20)
