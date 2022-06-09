@@ -1,12 +1,16 @@
 
 class Menu:
     # def __init__(self):
-        
+      
     def add(self,food,price):
         self.food=food
         self.price=price
-    def show(self):
-        print(self.food, self.price)
+        self.list=list.append(self.food,self.price)
+        print(list)
+    # def show(self):
+    #     # print(self.food, self.price)
+    #   for i in globally(list):
+    #     print(i)
 
 
 
@@ -16,6 +20,5 @@ m = Menu()
 # m.add(food, price)
 # m.show()
 m.add("idly", 10)
-m.show()
 m.add("vada", 20)
 m.show()
