@@ -1,7 +1,14 @@
 
 
 class Menu:
-    """fill in class definition here"""
+  def __init__(self):
+    self.list=[]
+  def __add__(self,a):
+    self.list.append((a[0],a[1]))
+    return self
+  def __str__(self)
+    
+  
 
 
 m = Menu()
