@@ -1,11 +1,13 @@
 
+class Menu():
+  def __setitem__(self,key,value):
+    self.__dict__[key]=value
 
-class Menu(dict):
-    """fill in class definition here"""
 
 
 class Order:
-    """fill in class definition here"""
+  def __setitem__(self):
+    
 
 
 class Bill:
@@ -16,6 +18,7 @@ m = Menu()
 m["idly"] = 20
 m["vada"] = 20
 
+
 o = Order(m)
 try:
     o["vada"] = 2
@@ -24,5 +27,5 @@ try:
 except KeyError as e:
     print(e)
 
-b = Bill(m, o)
-print(b)
+# b = Bill(m, o)
+# print(b)
