@@ -5,4 +5,4 @@ import xml.etree.ElementTree as et
 from urllib.request import*
 url=input("enter the url :")
 # data=urllib.request.urlopen(url)
-tree=et.fromstring(data)
+tree=et.fromstring(data).
