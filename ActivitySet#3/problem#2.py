@@ -14,4 +14,4 @@ for __ in range(int(input())):
   fr=find_fraction(l)
   for i in l[:-1]:
     print(f"1/{i} + ",end="")
-  print(f"1/{l[n-1]} = {int(fr[0])}/{int(fr[1])}")
+  print(f"1/{l[n-1]} = {int(fr[0])}/{int(fr[1])}").

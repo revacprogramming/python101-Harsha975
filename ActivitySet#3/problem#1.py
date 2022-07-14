@@ -11,7 +11,6 @@ def outpp(ch,resl):
         print(f'Area of rectangle with vertices ({ch[j][0]},{ch[j][1]}),({ch[j][2]},{ch[j][3]}),({ch[j][4]},{ch[j][5]}) is {resl[j]}')
         j+=1
     
-
 ll,ch=[],[]
 for i in range(int(input())):
   rl=list(map(float,input().split()))
