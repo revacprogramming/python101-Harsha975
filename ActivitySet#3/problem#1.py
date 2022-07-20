@@ -34,5 +34,5 @@ def main():
     print(sides)
     j=0  
     for j in range(0,n):   
-        print('Area of rectangle with vertices ({},{}) ({},{}) ({},{}) is {}'.format(sides[j][0],sides[j][1],sides[j][2],sides[j][3],sides[j][4],sides[j][5],areas[j]))   
+        print('''Area of rectangle with vertices ({},{}) ({},{}) ({},{}) is {}'.format(sides[j][0],sides[j][1],sides[j][2],sides[j][3],sides[j][4],sides[j][5],areas[j])''')   
 main()
