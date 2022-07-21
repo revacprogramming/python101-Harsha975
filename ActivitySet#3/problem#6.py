@@ -6,8 +6,7 @@ for i in range(n):
         s[0]=1
         print('{} points : {} ways'.format(m,s[m])) 
         continue
-    n1,n2,a=0,0,0
-    n3=1
+    n1,n2,a,n3=0,0,0,1
     for j in range(m):
         a=n1+n2+n3
         n1=n2
