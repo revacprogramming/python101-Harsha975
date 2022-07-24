@@ -1,4 +1,4 @@
-still yet to do
+still yet to do.
 s=[list(map(int,input().split())) ,
 list(map(int,input().split())) ,
 list(map(int,input().split())),
